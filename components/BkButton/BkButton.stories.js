@@ -6,7 +6,7 @@ export default {
     title: 'BkButton',
 }
 
-export const normal = () => ({
+export const primary = () => ({
     components: { BkButton },
     template: '<bk-button @clicked="buttonClicked">Click here</bk-button>',
     methods: { buttonClicked: action('button clicked') },
