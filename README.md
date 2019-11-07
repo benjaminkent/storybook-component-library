@@ -1,4 +1,4 @@
-# mock-ozk.ui
+# My components
 
 ## Project setup
 ```
