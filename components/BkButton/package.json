@@ -1,5 +1,5 @@
 {
-    "name": "@bkj/bk-button",
+    "name": "@benjaminkent/bk-button",
     "version": "0.0.0",
     "publishConfig": {
         "access": "public"
