@@ -30,33 +30,26 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator'
 import { fetchMathFact } from './ajax'
 
-export default {
-    name: 'BkNumberFactFinder',
-    props: {
-        factType: String,
-    },
-    data() {
-        return {
-            number: null,
-            numberFact: '',
-            error: false,
+export default class BkNumberFact extends Vue {
+    @Prop(String) readonly factType!: string
+    number: number | null = null
+    numberFact: string = ''
+    error: boolean = false
+
+    async handleSubmit() {
+        if (!this.number) {
+            this.error = true
+            this.numberFact = ''
+            return
         }
-    },
-    methods: {
-        async handleSubmit() {
-            if (!this.number) {
-                this.error = true
-                this.numberFact = ''
-                return
-            }
-            this.error = false
-            const response = await fetchMathFact(this.number, this.factType)
-            this.numberFact = response.data
-        },
-    },
+        this.error = false
+        const response = await fetchMathFact(this.number, this.factType)
+        this.numberFact = response.data
+    }
 }
 </script>
 

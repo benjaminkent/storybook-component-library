@@ -1,5 +1,5 @@
 {
-    "name": "@benjaminkent/bk-number-fact-finder",
+    "name": "@benjaminkent/bk-number-fact",
     "version": "0.0.0",
     "publishConfig": {
         "access": "public"

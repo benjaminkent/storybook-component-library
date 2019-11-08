@@ -1,39 +1,29 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "webpack-env"
-    ],
-    "paths": {
-      "@/*": [
-        "components/*"
-      ]
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "types": ["webpack-env"],
+        "paths": {
+            "@/*": ["components/*"]
+        },
+        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
-  },
-  "include": [
-    "components/**/*.ts",
-    "components/**/*.tsx",
-    "components/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx", "shims-tsx.d.ts", "shims-vue.d.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "include": [
+        "components/**/*.ts",
+        "components/**/*.tsx",
+        "components/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx",
+        "components/shims-tcomponents/shims-vue.d.tsms-vue.d.ts"
+    ],
+    "exclude": ["node_modules"]
 }
