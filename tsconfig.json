@@ -31,7 +31,7 @@
     "components/**/*.tsx",
     "components/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx", "shims-tsx.d.ts", "shims-vue.d.ts"
   ],
   "exclude": [
     "node_modules"

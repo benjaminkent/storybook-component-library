@@ -4,14 +4,14 @@
     </button>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-
-@Component({})
-export default class BkButton extends Vue {
-    handleClick() {
-        this.$emit('clicked')
-    }
+<script>
+export default {
+    name: 'BkButton',
+    methods: {
+        handleClick() {
+            this.$emit('clicked')
+        },
+    },
 }
 </script>
 
